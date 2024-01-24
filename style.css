@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Aldo-SemiBold';
+    src: url("./fonts/Aldo-SemiBold.ttf");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Aldo-SemiBold';
+    color: #0A3871;
+    background-color: #f3f5fc;
+
+}
+
+main {
+    margin: 0 16px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0 16px;
+    height: 96px;
+    text-align: start;
+    line-height: 96px;
+}
+
+.input-area {
+    border: none;
+    resize: none;
+    width: calc(100% - 32px);
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: 32px;
+    min-height: 320px;
+}
+
+.input-area::placeholder {
+    color: #0A3871;
+    opacity: 1;
+}
+
+.input-area:focus {
+    outline: none;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.warning small {
+    font-size: 12px;
+    color: #495057;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+#encript-button,
+#decript-button {
+    border-radius: 24px;
+    padding: 24px;
+    border: none;
+    width: 100%;
+}
+
+#encript-button {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+#decript-button {
+    color: #0A3871;
+    background-color: inherit;
+    border: 1px solid #0A3871;
+}
+
+#output {
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 32px;
+    margin: 24px 0;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    gap: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #343A40;
+    bottom: 0;
+}
+
+#output h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+
+#output p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0 32px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
