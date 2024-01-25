@@ -10,6 +10,10 @@
      */
     const resetOutput = () => {
         $output.innerHTML = `
+        <img 
+            src="./public/not-found.svg"
+            alt="person with a magnifying glass looking at a diamond"
+            class="not-found" />
         <h3> Ning&uacuten mensaje fue encontrado </h3>
         <p class="sub-text">Ingresa el texto que desees encriptar o desencriptar.</p>
         `
