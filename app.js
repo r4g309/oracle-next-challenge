@@ -25,6 +25,8 @@
      */
     const showOutput = (text) => {
         $output.textContent = ''
+        const convertedContainer = document.createElement('div');
+        convertedContainer.className = 'converted-container'
         const textElement = document.createElement('p');
         textElement.className = 'converted'
         textElement.textContent = text;
@@ -35,7 +37,8 @@
         copyButton.addEventListener('click', () => {
             navigator.clipboard.writeText(text)
         })
-        $output.append(textElement, copyButton)
+        convertedContainer.append(textElement, copyButton)
+        $output.appendChild(convertedContainer)
     }
 
     /**
