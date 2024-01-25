@@ -160,6 +160,12 @@ main {
     padding: 0;
 }
 
+.user-info {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .button-container {
@@ -243,6 +249,6 @@ main {
     }
 
     section:last-child {
-        height: 100vh;
+        height: 98vh;
     }
 }
